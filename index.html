@@ -10,6 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- tailwind custom -->
     <script>
         tailwind.config = {
@@ -29,7 +32,7 @@
 </head>
 
 <body>
-    <header class="my-container mt-[50px]">
+    <header id="header-container" class="mt-[50px]">
         <nav class="flex justify-between items-center min-h-16 mt-10">
 
             <div id="menu-icon" class="bars w-8 cursor-pointer">
@@ -58,7 +61,7 @@
 
         <!-- banner area -->
         <section class="banner mt-8">
-            <div class="carousel w-full">
+            <div class="carousel">
 
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="/Images/1.png" class="w-full" />
@@ -72,7 +75,7 @@
                 <div id="slide2" class="carousel-item relative w-full">
                     <img src="/Images/1.png" class="w-full" />
 
-                    <div class="banner-btn absolute flex gap-4 transform -translate-y-1/2 left-5 bottom-0">
+                    <div class="banner-btn absolute flex gap-4 transform -translate-y-1/2 left-35 lg:left-5 bottom-0">
                         <a href="#slide1" id="prev-2" class="btn btn-circle bg-black text-white">❮</a>
                         <a href="#slide2" id="next-2" class="btn btn-circle bg-black text-white">❯</a>
                     </div>
@@ -88,64 +91,64 @@
         </section>
     </header>
 
-    <main class="my-container">
+    <main id="container"">
         <!-- progress area -->
-        <section class="hockey-club text-center mt-20 mb-36">
-            <h1 class="text-[#131318] font-extrabold text-4xl pt-12 mb-5">Professional Hockeys Club</h1>
-            <p class="mb-16 pb-12">Hockey, with roots traced back to stick and ball games in the 18th and 19th
-                centuries, <br> has a rich
-                history. The modern game emerged in England</p>
+        <section class=" hockey-club text-center mt-20 mb-36">
+        <h1 class="text-[#131318] font-extrabold text-4xl pt-12 mb-5">Professional Hockeys Club</h1>
+        <p class="mb-16 pb-12">Hockey, with roots traced back to stick and ball games in the 18th and 19th
+            centuries, <br> has a rich
+            history. The modern game emerged in England</p>
 
-            <div class="progress-bar lg:flex md:flex justify-center w-[80%] m-auto gap-10">
+        <div class="progress-bar lg:flex md:flex justify-center w-[80%] m-auto gap-10">
 
-                <div class="progress-container mb-10">
-                    <div id="progress-outer-1" class="radial-progress" style="--value:100;" role="progressbar">
-                        <div id="progress-bar-1" class="radial-progress" style="--value:87;" role="progressbar"><span
-                                class="font-extrabold text-2xl">87%</span></div>
-                    </div>
-                    <div class="progress-description">
-                        <h3 class="font-semibold text-[#131318] text-[20px] mt-5">Prayer Facility</h3>
-                        <p>Hockey, with roots traced back to stick and ball</p>
-                    </div>
+            <div class="progress-container mb-10">
+                <div id="progress-outer-1" class="radial-progress" style="--value:100;" role="progressbar">
+                    <div id="progress-bar-1" class="radial-progress" style="--value:87;" role="progressbar"><span
+                            class="font-extrabold text-2xl">87%</span></div>
                 </div>
-
-
-                <div class="progress-container mb-10">
-                    <div id="progress-outer-2" class="radial-progress" style="--value:100;" role="progressbar">
-                        <div id="progress-bar-2" class="radial-progress" style="--value:95;" role="progressbar"><span
-                                class="font-extrabold text-2xl">95%</span></div>
-                    </div>
-                    <div class="progress-description">
-                        <h3 class="font-semibold text-[#131318] text-[20px] mt-5">Prayer Facility</h3>
-                        <p>Hockey, with roots traced back to stick and ball</p>
-                    </div>
+                <div class="progress-description">
+                    <h3 class="font-semibold text-[#131318] text-[20px] mt-5">Prayer Facility</h3>
+                    <p>Hockey, with roots traced back to stick and ball</p>
                 </div>
-
-
-                <div class="progress-container mb-10">
-                    <div id="progress-outer-3" class="radial-progress" style="--value:100;">
-                        <div id="progress-bar-3" class="radial-progress" style="--value:90;" role="progressbar"><span
-                                class="font-extrabold text-2xl">90%</span></div>
-                    </div>
-                    <div class="progress-description">
-                        <h3 class="font-semibold text-[#131318] text-[20px] mt-5">Prayer Facility</h3>
-                        <p>Hockey, with roots traced back to stick and ball</p>
-                    </div>
-                </div>
-
-
-                <div class="progress-container mb-10">
-                    <div id="progress-outer-4" class="radial-progress" style="--value:100;">
-                        <div id="progress-bar-4" class="radial-progress" style="--value:80;" role="progressbar"><span
-                                class="font-extrabold text-2xl">80%</span></div>
-                    </div>
-                    <div class="progress-description">
-                        <h3 class="font-semibold text-[#131318] text-[20px] mt-5">Prayer Facility</h3>
-                        <p>Hockey, with roots traced back to stick and ball</p>
-                    </div>
-                </div>
-
             </div>
+
+
+            <div class="progress-container mb-10">
+                <div id="progress-outer-2" class="radial-progress" style="--value:100;" role="progressbar">
+                    <div id="progress-bar-2" class="radial-progress" style="--value:95;" role="progressbar"><span
+                            class="font-extrabold text-2xl">95%</span></div>
+                </div>
+                <div class="progress-description">
+                    <h3 class="font-semibold text-[#131318] text-[20px] mt-5">Prayer Facility</h3>
+                    <p>Hockey, with roots traced back to stick and ball</p>
+                </div>
+            </div>
+
+
+            <div class="progress-container mb-10">
+                <div id="progress-outer-3" class="radial-progress" style="--value:100;">
+                    <div id="progress-bar-3" class="radial-progress" style="--value:90;" role="progressbar"><span
+                            class="font-extrabold text-2xl">90%</span></div>
+                </div>
+                <div class="progress-description">
+                    <h3 class="font-semibold text-[#131318] text-[20px] mt-5">Prayer Facility</h3>
+                    <p>Hockey, with roots traced back to stick and ball</p>
+                </div>
+            </div>
+
+
+            <div class="progress-container mb-10">
+                <div id="progress-outer-4" class="radial-progress" style="--value:100;">
+                    <div id="progress-bar-4" class="radial-progress" style="--value:80;" role="progressbar"><span
+                            class="font-extrabold text-2xl">80%</span></div>
+                </div>
+                <div class="progress-description">
+                    <h3 class="font-semibold text-[#131318] text-[20px] mt-5">Prayer Facility</h3>
+                    <p>Hockey, with roots traced back to stick and ball</p>
+                </div>
+            </div>
+
+        </div>
         </section>
 
         <!-- program area -->
@@ -565,7 +568,8 @@
         <div class="my-container flex flex-col lg:flex-row justify-between items-center lg:items-start">
             <div>
                 <h1 class="font-extrabold text-3xl mb-5">Get In Touch</h1>
-                <p class="opacity-4 leading-7">Hockey, with roots traced back to stick and ball games <br> in the 18th and 19th
+                <p class="opacity-4 leading-7">Hockey, with roots traced back to stick and ball games <br> in the 18th
+                    and 19th
                     centuries, <br> has a rich
                     history. The modern game emerged in England</p>
                 <div class="flex items-center mt-5 gap-3">
@@ -608,8 +612,9 @@
 
     </footer>
 
-    <!-- Main js -->
-    <script src="main.js"></script>
+
 </body>
+<!-- Main js -->
+<script src="main.js"></script>
 
 </html>

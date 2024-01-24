@@ -12,13 +12,16 @@ body {
 li{
     list-style: none;
 }
-
-.my-container{
-    width: 80%;
+#container{
+    width: 90%;
     margin: 0 auto;
 }
 
 /* nav area css */
+#header-container{
+    width: 90%;
+    margin: 0 auto;
+}
 nav {
     position: relative;
 }
