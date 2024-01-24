@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+#container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* nav area css */
+nav {
+    position: relative;
+}
+
+.hockey-logo {
+    color: #131318;
+}
+
+.hockey-logo span {
+    color: #FF4240;
+}
+
+#menu-icon {
+    display: none;
+}
+
+#menu img {
+    display: none;
+}
+
+.hockey-menu ul li a {
+    color: #424247;
+}
+
+.hockey-menu ul li a {
+    transition: 0.7s ease;
+}
+
+.hockey-menu ul li a:hover {
+    color: #FF4240;
+    font-weight: 700;
+}
+
+.bars .bar {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width:640px) {
+    #menu-icon {
+        display: block;
+    }
+
+    #menu {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: all 1s;
+        background-color: #ff4340;
+        overflow: hidden;
+        align-items: center;
+        z-index: 1;
+    }
+
+    #menu li {
+        padding: 10px;
+    }
+
+    #menu img {
+        display: block;
+        padding-bottom: 5px;
+    }
+
+    #menu li a {
+        color: #131318;
+    }
+
+    .hockey-btn-area img {
+        display: none;
+    }
+}
+
+
+
+
+/* banner area */
+
+
+#prev-btn,
+#next-btn {
+    border: 0;
+    outline: 0;
+    background-color: #131318;
+    color: #fff;
+}
+
+#prev-2,
+#next-2 {
+    border: 0;
+    outline: 0;
+    background-color: #131318;
+    color: #fff;
+}
+
+@media (min-width:1024px) {
+    .banner {
+        position: relative;
+    }
+
+    .banner-description {
+        width: 40%;
+        position: absolute;
+        bottom: 5%;
+        right: 2%;
+    }
+}
+
+@media (max-width:640px) {
+    body {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .banner-btn {
+        left: 38%;
+    }
+
+    .banner-description {
+        margin-top: 30px;
+    }
+
+}
+
+
+
+
+/*  */
+
+.hockey-club h1 {
+    border-top: 1px dashed rgba(19, 19, 24, 0.20);
+}
+
+.hockey-club>p {
+    border-bottom: 1px dashed rgba(19, 19, 24, 0.20);
+}
+
+#progress-outer-1 {
+    color: #E7E7E8;
+}
+
+#progress-bar-1 {
+    color: #FF4240;
+    z-index: 1;
+    transform: rotate(140deg);
+}
+
+#progress-bar-1 span {
+    transform: rotate(-140deg);
+    color: #131318;
+}
+
+#progress-outer-2 {
+    color: #E7E7E8;
+}
+
+#progress-bar-2 {
+    color: #49D293;
+    z-index: 1;
+    transform: rotate(120deg);
+}
+
+#progress-bar-2 span {
+    transform: rotate(-120deg);
+    color: #131318;
+}
+
+#progress-outer-3 {
+    color: #E7E7E8;
+}
+
+#progress-bar-3 {
+    color: #FFB546;
+    z-index: 1;
+    transform: rotate(140deg);
+}
+
+#progress-bar-3 span {
+    transform: rotate(-140deg);
+    color: #131318;
+}
+
+#progress-outer-4 {
+    color: #E7E7E8;
+}
+
+#progress-bar-4 {
+    color: #4C8DF1;
+    z-index: 1;
+    transform: rotate(140deg);
+}
+
+#progress-bar-4 span {
+    transform: rotate(-140deg);
+    color: #131318;
+}
+
+
+
+.program-img-1 {
+    width: 49%;
+    background: linear-gradient(45deg, rgba(19, 19, 24, 0.50), rgba(19, 19, 24, 0.5)), url('./Images/2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
+}
+
+.program-img-2 {
+    width: 49%;
+    background: linear-gradient(45deg, rgba(19, 19, 24, 0.50), rgba(19, 19, 24, 0.5)), url('./Images/3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
+}
+
+.program-img img {
+    width: 100%;
+    /* object-fit: cover; */
+}
+
+.program-img-3 {
+    width: 100%;
+    background: linear-gradient(45deg, rgba(19, 19, 24, 0.50), rgba(19, 19, 24, 0.5)), url('./Images/4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
+}
+
+.program-img-3 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width:640px) {
+    .program-area {
+        flex-direction: column;
+    }
+
+    .program-img-1 {
+        width: 100%;
+        background: linear-gradient(45deg, rgba(19, 19, 24, 0.50), rgba(19, 19, 24, 0.5)), url('./Images/2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 18px;
+    }
+
+    .program-img-2 {
+        width: 100%;
+        background: linear-gradient(45deg, rgba(19, 19, 24, 0.50), rgba(19, 19, 24, 0.5)), url('./Images/3.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 18px;
+    }
+}
+
+
+@media (max-width:640px){
+    .product{
+        width: 100%;
+    }
+    .product img{
+        width: 100%; 
+        object-fit: cover; 
+    }
+    
+}

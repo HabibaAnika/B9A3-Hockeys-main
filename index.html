@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey’s</title>
+
+    <!-- tailwind and daisy UI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind custom -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'hockey-primary-bg': '#FF4240',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="container">
+    <header class="container mx-auto mt-[50px]">
+        <nav class="flex justify-between items-center min-h-16">
+
+            <div id="menu-icon" class="bars w-8 cursor-pointer">
+                <img class="bar" src="/Images/menus.png" alt="" onclick="toggle()">
+            </div>
+
+            <div class="hockey-logo font-extrabold text-4xl"><a href="">Hockey<span>’</span>s</a></div>
+
+            <div class="hockey-menu">
+                <ul id="menu" class="flex font-normal items-center gap-11">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Pages</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                    <img class="w-5" src="/Images/icons8-search-50.png" alt="">
+                </ul>
+            </div>
+
+            <div class="hockey-btn-area flex items-center gap-4">
+                <img class="w-6 h-6" src="/Images/icons8-search-50.png" alt="">
+                <button class="btn bg-hockey-primary-bg text-white font-bold text-xl">Get Ticket<button>
+            </div>
+
+        </nav>
+
+        <!-- banner area -->
+        <section class="banner mt-8">
+            <div class="carousel w-full">
+
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="/Images/1.png" class="w-full" />
+
+                    <div class="banner-btn absolute flex gap-4 transform -translate-y-1/2 left-5 bottom-0">
+                        <a href="#slide1" id="prev-2" class="btn btn-circle bg-black text-white">❮</a>
+                        <a href="#slide2" id="next-2" class="btn btn-circle bg-black text-white">❯</a>
+                    </div>
+                </div>
+
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="/Images/1.png" class="w-full" />
+
+                    <div class="banner-btn absolute flex gap-4 transform -translate-y-1/2 left-5 bottom-0">
+                        <a href="#slide1" id="prev-2" class="btn btn-circle bg-black text-white">❮</a>
+                        <a href="#slide2" id="next-2" class="btn btn-circle bg-black text-white">❯</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="banner-description right-14 bg-[#131318] rounded-2xl p-8">
+                <h2 class="font-extrabold text-2xl text-white">Meet all the heroes from the field</h2>
+                <p class="text-white opacity-60">Hockey, with roots traced back to stick and ball games in the
+                    18th and 19th centuries, <br> has a rich history. The modern game emerged in England</p>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <!-- progress area -->
+        <section class="hockey-club container mx-auto text-center mt-20 mb-36">
+            <h1 class="text-[#131318] font-extrabold text-4xl pt-12 mb-5">Professional Hockeys Club</h1>
+            <p class="mb-16 pb-12">Hockey, with roots traced back to stick and ball games in the 18th and 19th
+                centuries, <br> has a rich
+                history. The modern game emerged in England</p>
+
+            <div class="progress-bar lg:flex md:flex justify-center w-[80%] m-auto gap-10">
+
+                <div class="progress-container mb-10">
+                    <div id="progress-outer-1" class="radial-progress" style="--value:100;" role="progressbar">
+                        <div id="progress-bar-1" class="radial-progress" style="--value:87;" role="progressbar"><span
+                                class="font-extrabold text-2xl">87%</span></div>
+                    </div>
+                    <div class="progress-description">
+                        <h3 class="font-semibold text-[#131318] text-[20px] mt-5">Prayer Facility</h3>
+                        <p>Hockey, with roots traced back to stick and ball</p>
+                    </div>
+                </div>
+
+
+                <div class="progress-container mb-10">
+                    <div id="progress-outer-2" class="radial-progress" style="--value:100;" role="progressbar">
+                        <div id="progress-bar-2" class="radial-progress" style="--value:95;" role="progressbar"><span
+                                class="font-extrabold text-2xl">95%</span></div>
+                    </div>
+                    <div class="progress-description">
+                        <h3 class="font-semibold text-[#131318] text-[20px] mt-5">Prayer Facility</h3>
+                        <p>Hockey, with roots traced back to stick and ball</p>
+                    </div>
+                </div>
+
+
+                <div class="progress-container mb-10">
+                    <div id="progress-outer-3" class="radial-progress" style="--value:100;">
+                        <div id="progress-bar-3" class="radial-progress" style="--value:90;" role="progressbar"><span
+                                class="font-extrabold text-2xl">90%</span></div>
+                    </div>
+                    <div class="progress-description">
+                        <h3 class="font-semibold text-[#131318] text-[20px] mt-5">Prayer Facility</h3>
+                        <p>Hockey, with roots traced back to stick and ball</p>
+                    </div>
+                </div>
+
+
+                <div class="progress-container mb-10">
+                    <div id="progress-outer-4" class="radial-progress" style="--value:100;">
+                        <div id="progress-bar-4" class="radial-progress" style="--value:80;" role="progressbar"><span
+                                class="font-extrabold text-2xl">80%</span></div>
+                    </div>
+                    <div class="progress-description">
+                        <h3 class="font-semibold text-[#131318] text-[20px] mt-5">Prayer Facility</h3>
+                        <p>Hockey, with roots traced back to stick and ball</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- program area -->
+        <section class="hockey-club container mx-auto text-center mt-20 mb-36">
+            <h1 class="text-[#131318] font-extrabold text-4xl pt-12 mb-5">Program Sections</h1>
+            <p class="mb-16 pb-12">Hockey, with roots traced back to stick and ball games in the 18th and 19th
+                centuries, <br> has a rich
+                history. The modern game emerged in England</p>
+
+            <div class="flex justify-center gap-8 program-area">
+
+                <div class="program-img-1 pt-60 px-12 pb-12 text-left text-white">
+                    <h2 class="font-extrabold text-2xl mb-5">Teenager Program</h2>
+                    <p class="font-medium mb-5">Hockey, with roots traced back to stick and ball games in the 18th and
+                        19th centuries has a rich
+                        history. The modern game emerged in England</p>
+                    <button class="btn bg-hockey-primary-bg outline-none border-0 text-white font-bold text-xl">Register
+                        Now!</button>
+                </div>
+
+                <div class="program-img-2 pt-60 px-12 pb-12 text-left text-white">
+                    <h2 class="font-extrabold text-2xl mb-5">Junior Program</h2>
+                    <p class="font-medium mb-5">Hockey, with roots traced back to stick and ball games in the 18th and
+                        19th centuries has a rich
+                        history. The modern game emerged in England</p>
+                    <button class="btn bg-hockey-primary-bg outline-none border-0 text-white font-bold text-xl">Register
+                        Now!</button>
+                </div>
+
+            </div>
+
+            <div class="program-img-3 pt-80 px-12 pb-12 text-left text-white mt-8">
+                <h2 class="font-extrabold text-2xl mb-5">Professional Program</h2>
+                <p class="font-medium mb-5">Hockey, with roots traced back to stick and ball games in the 18th and 19th
+                    centuries, has a rich history. <br> The modern game emerged in England in the mid-18th century,
+                    evolving over time with significant milestones <br> like the formation of the National Hockey League
+                    in 1917</p>
+                <button class="btn bg-hockey-primary-bg outline-none border-0 text-white font-bold text-xl">Register
+                    Now!</button>
+            </div>
+        </section>
+
+        <!-- product area -->
+        <section class="hockey-club container mx-auto text-center mt-20 mb-36">
+            <h1 class="text-[#131318] font-extrabold text-4xl pt-12 mb-5">Our New Products</h1>
+            <p class="mb-16 pb-12">Hockey, with roots traced back to stick and ball games in the 18th and 19th
+                centuries, <br> has a rich
+                history. The modern game emerged in England</p>
+
+            <!-- product area -->
+            <div class="flex text-left gap-5 flex-col lg:flex-row mb-5">
+                <div class="flex items-center gap-6 p-5 border border-solid rounded-2xl flex-col lg:flex-row">
+                    <div class="product"><img class="" src="/Images/5.png" alt=""></div>
+                    <div>
+                        <div class="flex gap-4">
+                            <div class="flex items-center gap-2">
+                                <img class="h-4" src="/Images/icons8-star-48.png" alt="">
+                                <p>5.0</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img class="h-4" src="/Images/icons8-eye-24.png" alt="">
+                                <p>20</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img class="h-4" src="/Images/icons8-heart-48.png" alt="">
+                                <p>200</p>
+                            </div>
+                        </div>
+                        <h3 class="font-extrabold text-xl mb-2 mt-2">World Cup Football Jacket</h3>
+                        <p class="font-medium text-sm opacity-90">Hockey, with roots traced back to stick and ball games
+                            in the 18th and 19th
+                            centuries has a rich
+                            history</p>
+                        <div class="flex gap-4 mt-2 flex-col lg:flex-row">
+                            <p class="font-extrabold text-lg text-[#FF4240]">Price - $22.00</p>
+                            <div class="flex items-center gap-2">
+                                <img class="h-4 opacity-90" src="/Images/icons8-cart-64.png" alt="">
+                                <p class="opacity-90 text-sm font-medium">Delivery Fee : Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-6  p-5 border border-solid rounded-2xl flex-col lg:flex-row">
+                    <div class="product"><img class="product" src="/Images/6.png" alt=""></div>
+                    <div>
+                        <div class="flex gap-4">
+                            <div class="flex items-center gap-2">
+                                <img class="h-4" src="/Images/icons8-star-48.png" alt="">
+                                <p>5.0</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img class="h-4" src="/Images/icons8-eye-24.png" alt="">
+                                <p>20</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img class="h-4" src="/Images/icons8-heart-48.png" alt="">
+                                <p>200</p>
+                            </div>
+                        </div>
+                        <h3 class="font-extrabold text-xl mb-2 mt-2">World Cup Football Flags</h3>
+                        <p class="font-medium text-sm opacity-90">Hockey, with roots traced back to stick and ball games
+                            in the 18th and 19th
+                            centuries has a rich
+                            history</p>
+                        <div class="flex gap-4 mt-2 flex-col lg:flex-row">
+                            <p class="font-extrabold text-lg text-[#FF4240]">Price - $22.00</p>
+                            <div class="flex items-center gap-2">
+                                <img class="h-4 opacity-90" src="/Images/icons8-cart-64.png" alt="">
+                                <p class="opacity-90 text-sm font-medium">Delivery Fee : Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- product area -->
+
+            <!-- product area -->
+            <div class="flex text-left gap-5 flex-col lg:flex-row mb-5">
+
+                <div class="flex items-center gap-6 p-5 border border-solid rounded-2xl flex-col lg:flex-row">
+                    <div class="product"><img class="" src="/Images/7.png" alt=""></div>
+                    <div>
+                        <div class="flex gap-4">
+                            <div class="flex items-center gap-2">
+                                <img class="h-4" src="/Images/icons8-star-48.png" alt="">
+                                <p>5.0</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img class="h-4" src="/Images/icons8-eye-24.png" alt="">
+                                <p>20</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img class="h-4" src="/Images/icons8-heart-48.png" alt="">
+                                <p>200</p>
+                            </div>
+                        </div>
+                        <h3 class="font-extrabold text-xl mb-2 mt-2">World Cup Football Cap</h3>
+                        <p class="font-medium text-sm opacity-90">Hockey, with roots traced back to stick and ball games
+                            in the 18th and 19th
+                            centuries has a rich
+                            history</p>
+                        <div class="flex gap-4 mt-2 flex-col lg:flex-row">
+                            <p class="font-extrabold text-lg text-[#FF4240]">Price - $22.00</p>
+                            <div class="flex items-center gap-2">
+                                <img class="h-4 opacity-90" src="/Images/icons8-cart-64.png" alt="">
+                                <p class="opacity-90 text-sm font-medium">Delivery Fee : Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-6  p-5 border border-solid rounded-2xl flex-col lg:flex-row">
+                    <div class="product"><img class="product" src="/Images/8.png" alt=""></div>
+                    <div>
+                        <div class="flex gap-4">
+                            <div class="flex items-center gap-2">
+                                <img class="h-4" src="/Images/icons8-star-48.png" alt="">
+                                <p>5.0</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img class="h-4" src="/Images/icons8-eye-24.png" alt="">
+                                <p>20</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img class="h-4" src="/Images/icons8-heart-48.png" alt="">
+                                <p>200</p>
+                            </div>
+                        </div>
+                        <h3 class="font-extrabold text-xl mb-2 mt-2">World Cup Football Jersey</h3>
+                        <p class="font-medium text-sm opacity-90">Hockey, with roots traced back to stick and ball games
+                            in the 18th and 19th
+                            centuries has a rich
+                            history</p>
+                        <div class="flex gap-4 mt-2 flex-col lg:flex-row">
+                            <p class="font-extrabold text-lg text-[#FF4240]">Price - $22.00</p>
+                            <div class="flex items-center gap-2">
+                                <img class="h-4 opacity-90" src="/Images/icons8-cart-64.png" alt="">
+                                <p class="opacity-90 text-sm font-medium">Delivery Fee : Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- product area -->
+
+
+            <!-- product area -->
+            <div class="flex text-left gap-5 flex-col lg:flex-row mb-5">
+                <div class="flex items-center gap-6 p-5 border border-solid rounded-2xl flex-col lg:flex-row">
+                    <div class="product"><img class="" src="/Images/9.png" alt=""></div>
+                    <div>
+                        <div class="flex gap-4">
+                            <div class="flex items-center gap-2">
+                                <img class="h-4" src="/Images/icons8-star-48.png" alt="">
+                                <p>5.0</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img class="h-4" src="/Images/icons8-eye-24.png" alt="">
+                                <p>20</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img class="h-4" src="/Images/icons8-heart-48.png" alt="">
+                                <p>200</p>
+                            </div>
+                        </div>
+                        <h3 class="font-extrabold text-xl mb-2 mt-2">World Cup Cricket Helmet</h3>
+                        <p class="font-medium text-sm opacity-90">Hockey, with roots traced back to stick and ball games
+                            in the 18th and 19th
+                            centuries has a rich
+                            history</p>
+                        <div class="flex gap-4 mt-2 flex-col lg:flex-row">
+                            <p class="font-extrabold text-lg text-[#FF4240]">Price - $22.00</p>
+                            <div class="flex items-center gap-2">
+                                <img class="h-4 opacity-90" src="/Images/icons8-cart-64.png" alt="">
+                                <p class="opacity-90 text-sm font-medium">Delivery Fee : Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-6  p-5 border border-solid rounded-2xl flex-col lg:flex-row">
+                    <div class="product"><img class="product" src="/Images/10.png" alt=""></div>
+                    <div>
+                        <div class="flex gap-4">
+                            <div class="flex items-center gap-2">
+                                <img class="h-4" src="/Images/icons8-star-48.png" alt="">
+                                <p>5.0</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img class="h-4" src="/Images/icons8-eye-24.png" alt="">
+                                <p>20</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img class="h-4" src="/Images/icons8-heart-48.png" alt="">
+                                <p>200</p>
+                            </div>
+                        </div>
+                        <h3 class="font-extrabold text-xl mb-2 mt-2">World Cup Football Ball</h3>
+                        <p class="font-medium text-sm opacity-90">Hockey, with roots traced back to stick and ball games
+                            in the 18th and 19th
+                            centuries has a rich
+                            history</p>
+                        <div class="flex gap-4 mt-2 flex-col lg:flex-row">
+                            <p class="font-extrabold text-lg text-[#FF4240]">Price - $22.00</p>
+                            <div class="flex items-center gap-2">
+                                <img class="h-4 opacity-90" src="/Images/icons8-cart-64.png" alt="">
+                                <p class="opacity-90 text-sm font-medium">Delivery Fee : Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- product area -->
+
+
+        </section>
+
+        <!-- help desk area -->
+        <section class="hockey-club container mx-auto text-center mt-20 mb-36">
+            <h1 class="text-[#131318] font-extrabold text-4xl pt-12 mb-5">Clients Question</h1>
+            <p class="mb-16 pb-12">Hockey, with roots traced back to stick and ball games in the 18th and 19th
+                centuries, <br> has a rich
+                history. The modern game emerged in England</p>
+
+            <div class="help-desk p-10 flex flex-col lg:flex-row border border-solid gap-5 lg:gap-8 rounded-2xl">
+                <div class="">
+                    <img src="/Images/11.png" alt="">
+                </div>
+                <div class="w-3/4 text-left">
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-medium">
+                            Our Equipment
+                        </div>
+                        <div class="collapse-content">
+                            <p>Hockey, with roots traced back to stick and ball games in the 18th and 19th
+                                centuries, <br> has a rich
+                                history. The modern game emerged in England</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            Hockey Training
+                        </div>
+                        <div class="collapse-content">
+                            <p>Hockey, with roots traced back to stick and ball games in the 18th and 19th
+                                centuries, <br> has a rich
+                                history. The modern game emerged in England</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            Private Lessons
+                        </div>
+                        <div class="collapse-content">
+                            <p>Hockey, with roots traced back to stick and ball games in the 18th and 19th
+                                centuries, <br> has a rich
+                                history. The modern game emerged in England</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-medium">
+                            Booking
+                        </div>
+                        <div class="collapse-content">
+                            <p>Hockey, with roots traced back to stick and ball games in the 18th and 19th
+                                centuries, <br> has a rich
+                                history. The modern game emerged in England</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            Booking
+                        </div>
+                        <div class="collapse-content">
+                            <p>Hockey, with roots traced back to stick and ball games in the 18th and 19th
+                                centuries, <br> has a rich
+                                history. The modern game emerged in England</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-medium">
+                            Pricing
+                        </div>
+                        <div class="collapse-content">
+                            <p>Hockey, with roots traced back to stick and ball games in the 18th and 19th
+                                centuries, <br> has a rich
+                                history. The modern game emerged in England</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Get In Touch area  -->
+        <section class="hockey-club container mx-auto text-center mt-20 mb-36">
+            <h1 class="text-[#131318] font-extrabold text-4xl pt-12 mb-5">Get In Touch</h1>
+            <p class="mb-16 pb-12">Hockey, with roots traced back to stick and ball games in the 18th and 19th
+                centuries, <br> has a rich
+                history. The modern game emerged in England</p>
+            
+            <div class="flex flex-col lg:flex-row">
+                <div class="flex flex-col gap-5 border border-solid p-10 rounded-2xl">
+                    <div class="p-10 bg-[#bced6d34] text-left rounded-2xl">
+                        <img src="/Images/Group 1171275317.png" alt="">
+                        <p class="text-[#13131857] font-medium mb-1 mt-8">Phone Number :</p>
+                        <h4 class="font-extrabold text-lg text-[#131318]">(+62) 123-321-543</h4>
+                    </div>
+                    <div class="p-10 bg-[#fddd5f2d] text-left rounded-2xl">
+                        <img src="/Images/Group 1171275318.png" alt="">
+                        <p class="text-[#13131857] font-medium mb-1 mt-8">Email :</p>
+                        <h4 class="font-extrabold text-lg text-[#131318]">hockeys@support.com</h4>
+                    </div>
+                    <div class="p-10 bg-[#629cf321] text-left rounded-2xl">
+                        <img src="/Images/Group 1171275321.png" alt="">
+                        <p class="text-[#13131857] font-medium mb-1 mt-8">Location :</p>
+                        <h4 class="font-extrabold text-lg text-[#131318]">152/1 Mohakhali Wireless Gate</h4>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+        </section>
+        
+        
+
+    </main>
+
+    <!-- Main js -->
+    <script src="main.js"></script>
+</body>
+
+</html>
