@@ -28,9 +28,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body id="container">
-    <header class="container mx-auto mt-[50px]">
-        <nav class="flex justify-between items-center min-h-16">
+<body>
+    <header class="my-container mt-[50px]">
+        <nav class="flex justify-between items-center min-h-16 mt-10">
 
             <div id="menu-icon" class="bars w-8 cursor-pointer">
                 <img class="bar" src="/Images/menus.png" alt="" onclick="toggle()">
@@ -63,7 +63,7 @@
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="/Images/1.png" class="w-full" />
 
-                    <div class="banner-btn absolute flex gap-4 transform -translate-y-1/2 left-5 bottom-0">
+                    <div class="banner-btn absolute flex gap-4 transform -translate-y-1/2 left-35 lg:left-5 bottom-0">
                         <a href="#slide1" id="prev-2" class="btn btn-circle bg-black text-white">❮</a>
                         <a href="#slide2" id="next-2" class="btn btn-circle bg-black text-white">❯</a>
                     </div>
@@ -80,7 +80,7 @@
 
             </div>
 
-            <div class="banner-description right-14 bg-[#131318] rounded-2xl p-8">
+            <div class="banner-description right-8 bg-[#131318] rounded-2xl p-8">
                 <h2 class="font-extrabold text-2xl text-white">Meet all the heroes from the field</h2>
                 <p class="text-white opacity-60">Hockey, with roots traced back to stick and ball games in the
                     18th and 19th centuries, <br> has a rich history. The modern game emerged in England</p>
@@ -88,9 +88,9 @@
         </section>
     </header>
 
-    <main>
+    <main class="my-container">
         <!-- progress area -->
-        <section class="hockey-club container mx-auto text-center mt-20 mb-36">
+        <section class="hockey-club text-center mt-20 mb-36">
             <h1 class="text-[#131318] font-extrabold text-4xl pt-12 mb-5">Professional Hockeys Club</h1>
             <p class="mb-16 pb-12">Hockey, with roots traced back to stick and ball games in the 18th and 19th
                 centuries, <br> has a rich
@@ -149,7 +149,7 @@
         </section>
 
         <!-- program area -->
-        <section class="hockey-club container mx-auto text-center mt-20 mb-36">
+        <section class="hockey-club text-center mt-20 mb-36">
             <h1 class="text-[#131318] font-extrabold text-4xl pt-12 mb-5">Program Sections</h1>
             <p class="mb-16 pb-12">Hockey, with roots traced back to stick and ball games in the 18th and 19th
                 centuries, <br> has a rich
@@ -189,7 +189,7 @@
         </section>
 
         <!-- product area -->
-        <section class="hockey-club container mx-auto text-center mt-20 mb-36">
+        <section class="hockey-club text-center mt-20 mb-36">
             <h1 class="text-[#131318] font-extrabold text-4xl pt-12 mb-5">Our New Products</h1>
             <p class="mb-16 pb-12">Hockey, with roots traced back to stick and ball games in the 18th and 19th
                 centuries, <br> has a rich
@@ -402,7 +402,7 @@
         </section>
 
         <!-- help desk area -->
-        <section class="hockey-club container mx-auto text-center mt-20 mb-36">
+        <section class="hockey-club text-center mt-20 mb-36">
             <h1 class="text-[#131318] font-extrabold text-4xl pt-12 mb-5">Clients Question</h1>
             <p class="mb-16 pb-12">Hockey, with roots traced back to stick and ball games in the 18th and 19th
                 centuries, <br> has a rich
@@ -484,13 +484,13 @@
         </section>
 
         <!--Get In Touch area  -->
-        <section class="hockey-club container mx-auto text-center mt-20 mb-36">
+        <section class="hockey-club text-center mt-20 mb-36">
             <h1 class="text-[#131318] font-extrabold text-4xl pt-12 mb-5">Get In Touch</h1>
             <p class="mb-16 pb-12">Hockey, with roots traced back to stick and ball games in the 18th and 19th
                 centuries, <br> has a rich
                 history. The modern game emerged in England</p>
-            
-            <div class="flex flex-col lg:flex-row">
+
+            <div class="flex flex-col lg:flex-row gap-8">
                 <div class="flex flex-col gap-5 border border-solid p-10 rounded-2xl">
                     <div class="p-10 bg-[#bced6d34] text-left rounded-2xl">
                         <img src="/Images/Group 1171275317.png" alt="">
@@ -508,13 +508,105 @@
                         <h4 class="font-extrabold text-lg text-[#131318]">152/1 Mohakhali Wireless Gate</h4>
                     </div>
                 </div>
-                <div></div>
+
+                <div class="lg:w-3/4 flex flex-col gap-10">
+                    <div class="flex gap-5 w-full lg:flex-row flex-col">
+                        <div class="flex flex-col w-[100%] lg:w-[50%]">
+                            <label class="font-bold text-[#131318] text-left mb-4" for="name">Your Name</label>
+                            <input class="p-3 rounded-xl bg-[#1313180a]" type="text" name="" id=""
+                                placeholder="Enter your full name">
+                        </div>
+                        <div class="flex flex-col w-[100%] lg:w-[50%]">
+                            <label class="font-bold text-[#131318] text-left mb-4" for="name">Your Email</label>
+                            <input class="p-3 rounded-xl bg-[#1313180a]" type="email" name="" id=""
+                                placeholder="Enter your email">
+                        </div>
+                    </div>
+                    <div class="flex gap-5 lg:flex-row flex-col">
+                        <div class="flex flex-col w-[100%] lg:w-[50%]">
+                            <label class="font-bold text-[#131318] text-left mb-4" for="name">Subject</label>
+                            <input class="p-3 rounded-xl bg-[#1313180a]" type="email" name="" id=""
+                                placeholder="Enter your subject">
+                        </div>
+                        <div class="flex flex-col w-[100%] lg:w-[50%]">
+                            <label class="font-bold text-[#131318] text-left mb-4" for="name">Phone Number</label>
+                            <input class="p-3 rounded-xl bg-[#1313180a]" type="email" name="" id=""
+                                placeholder="Enter your phone number">
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col w-[100%]">
+                        <label class="font-bold text-[#131318] text-left mb-4" for="name">Message</label>
+                        <textarea class="p-5 rounded-xl bg-[#1313180a] mb-5" name="" id="" cols="30" rows="17"
+                            placeholder="Enter your message"></textarea>
+                        <input class="btn bg-hockey-primary-bg text-white" type="button" value="Send Message">
+                    </div>
+                </div>
             </div>
         </section>
-        
-        
+
+        <section class="text-center p-9 rounded-xl bg-[#13131810]">
+            <!-- social icon area -->
+            <div>
+                <h2 class="font-extrabold text-2xl mb-4">Social Media</h2>
+                <div class="social-icons flex items-center justify-center gap-8">
+                    <img class="h-6" src="/Images/icons8-twitter-30.png" alt="">
+                    <img class="h-6" src="/Images/icons8-facebook-50.png" alt="">
+                    <img class="h-6" src="/Images/icons8-instagram-24.png" alt="">
+                    <img class="h-6" src="/Images/icons8-github-30.png" alt="">
+                </div>
+            </div>
+
+        </section>
 
     </main>
+
+    <footer class="bg-black py-20 mt-20 text-white">
+        <div class="my-container flex flex-col lg:flex-row justify-between items-center lg:items-start">
+            <div>
+                <h1 class="font-extrabold text-3xl mb-5">Get In Touch</h1>
+                <p class="opacity-4 leading-7">Hockey, with roots traced back to stick and ball games <br> in the 18th and 19th
+                    centuries, <br> has a rich
+                    history. The modern game emerged in England</p>
+                <div class="flex items-center mt-5 gap-3">
+                    <img class="h-6" src="/Images/icons8-email-48.png" alt="">
+                    <p class="opacity-4">hockeys@support.com</p>
+                </div>
+                <div class="flex items-center gap-3 mt-5">
+                    <img class="h-6" src="/Images/icons8-phone-48.png" alt="">
+                    <p class="opacity-4">(+62) 123-321-543</p>
+                </div>
+            </div>
+
+            <div class="flex gap-60 lg:my-0 my-10">
+                <div>
+                    <h3 class="mb-5 font-bold text-lg">Company</h3>
+                    <li class="opacity-4 leading-7"><a href="">About us</a></li>
+                    <li class="opacity-4 leading-7"><a href="">Leadership</a></li>
+                    <li class="opacity-4 leading-7"><a href="">Careers</a></li>
+                    <li class="opacity-4 leading-7"><a href="">News & Article</a></li>
+                    <li class="opacity-4"><a href="">Legal Notice</a></li>
+                </div>
+                <div>
+                    <h3 class="mb-5 font-bold text-lg">Support</h3>
+                    <li class="opacity-4 leading-7"><a href="">Help Center</a></li>
+                    <li class="opacity-4 leading-7"><a href="">FAQ</a></li>
+                    <li class="opacity-4 leading-7"><a href="">Ticket Support</a></li>
+                    <li class="opacity-4"><a href="">Contact Us</a></li>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="mb-5 font-bold text-lg">Services</h3>
+                <li><a href="opacity-4 leading-7">Academy</a></li>
+                <li><a href="opacity-4 leading-7">Group Lesson</a></li>
+                <li><a href="opacity-4 leading-7">Private Lesson</a></li>
+                <li><a href="opacity-4 leading-7">Hockeys for kids</a></li>
+                <li><a href="opacity-4">Hockeys for Adult</a></li>
+            </div>
+        </div>
+
+    </footer>
 
     <!-- Main js -->
     <script src="main.js"></script>
