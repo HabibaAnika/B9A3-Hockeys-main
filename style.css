@@ -102,8 +102,7 @@ nav {
 
 
 
-/* banner area */
-
+/* banner area css*/
 
 #prev-btn,
 #next-btn {
@@ -135,25 +134,18 @@ nav {
 }
 
 @media (max-width:640px) {
-    body {
-        width: 90%;
-        margin: 0 auto;
-    }
-
     .banner-btn {
         left: 38%;
     }
-
     .banner-description {
         margin-top: 30px;
     }
-
 }
 
 
 
 
-/*  */
+/* hockey-club area css */
 
 .hockey-club h1 {
     border-top: 1px dashed rgba(19, 19, 24, 0.20);
@@ -224,7 +216,7 @@ nav {
 }
 
 
-
+/* program area css */
 .program-img-1 {
     width: 49%;
     background: linear-gradient(45deg, rgba(19, 19, 24, 0.50), rgba(19, 19, 24, 0.5)), url('./Images/2.png');
@@ -243,7 +235,6 @@ nav {
 
 .program-img img {
     width: 100%;
-    /* object-fit: cover; */
 }
 
 .program-img-3 {
@@ -281,7 +272,7 @@ nav {
     }
 }
 
-
+/* product area */
 @media (max-width:640px){
     .product{
         width: 100%;
