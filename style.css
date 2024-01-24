@@ -13,13 +13,13 @@ li{
     list-style: none;
 }
 #container{
-    width: 90%;
+    max-width: 85%;
     margin: 0 auto;
 }
 
 /* nav area css */
 #header-container{
-    width: 90%;
+    max-width: 85%;
     margin: 0 auto;
 }
 nav {
@@ -293,6 +293,6 @@ nav {
     
 }
 #footer-container{
-    width: 90%;
+    max-width: 85%;
     margin: 0 auto; 
 }
